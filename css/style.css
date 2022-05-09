@@ -27,14 +27,20 @@ ul{
 /* HEADER */
 header{
     height: 60px;
+    width: 100%;
     padding: 15px 10px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
 }
 
-nav ul{
+.top-bar ul{
     justify-content: flex-end;
 }
 
-nav ul a{
+.top-bar ul a{
     color: white;
     text-decoration: none;
     background-color: rgba(211, 211, 211, 0.35);
@@ -45,22 +51,71 @@ nav ul a{
 }
 
 /* MAIN */
+main{
+    height: calc(100vh - 140px)
+}
+
 .user-cam{
-    height: calc(100vh - 60px);
+    padding-top: 67px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .user{
     position: relative;
-    margin: 5px;
+    margin: 7px;
 }
 
 .user span{
     color: white;
-    background-color: rgba(211, 211, 211, 0.35);
+    background-color: rgba(211, 211, 211, 0.45);
     font-size: 14px;
     padding: 2px 4px;
 
     position: absolute;
     bottom: 5px;
     left: 0;
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    background-color: #222222;
+    height: 80px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.bottom-bar{
+    height: 100%;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+}
+
+.arrow-up{
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.btn-icon{
+    font-size: 15px;
+}
+
+.btn-name{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.bottom-bar li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
