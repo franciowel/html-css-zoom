@@ -1,5 +1,66 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* COMMONS */
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.flexcontainer{
+    display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    height: 60px;
+    padding: 15px 10px;
+}
+
+nav ul{
+    justify-content: flex-end;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(211, 211, 211, 0.35);
+    border-radius: 7px;
+    padding: 5px 7px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+/* MAIN */
+.user-cam{
+    height: calc(100vh - 60px);
+}
+
+.user{
+    position: relative;
+    margin: 5px;
+}
+
+.user span{
+    color: white;
+    background-color: rgba(211, 211, 211, 0.35);
+    font-size: 14px;
+    padding: 2px 4px;
+
+    position: absolute;
+    bottom: 5px;
+    left: 0;
 }
