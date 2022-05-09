@@ -52,7 +52,8 @@ header{
 
 /* MAIN */
 main{
-    height: calc(100vh - 140px)
+    height: calc(100vh - 140px);
+    overflow-y: auto;
 }
 
 .user-cam{
@@ -86,12 +87,13 @@ footer{
     background-color: #222222;
     height: 80px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .bottom-bar{
     height: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .btn{
@@ -102,20 +104,35 @@ footer{
 .arrow-up{
     margin: 0 15px;
     font-size: 15px;
+
 }
 
 .btn-icon{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .btn-name{
     text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 13px;
+    margin-top: 7px;
 }
 
 .bottom-bar li a{
     color: white;
     text-decoration: none;
     text-align: center;
+}
+
+.btn-center li{
+    margin-right: 15px;
+}
+
+.close-call a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    background-color: red;
+    border-radius: 8px;
+    padding: 6px 10px;
 }
